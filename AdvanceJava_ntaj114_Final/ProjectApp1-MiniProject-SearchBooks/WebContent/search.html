@@ -1,0 +1,53 @@
+
+<h1 style="color:red;text-align:center">Search for Books</h1>
+<hr>
+ <script language="JavaScript">
+   function isHtml(){
+   
+    //set html to hidden box
+    frm.source.value="html";
+    validate();
+   }
+   
+   function isExcel(){
+    //set html to hidden box
+    frm.source.value="excel";
+    validate();
+   }
+   function validate(){
+    if(frm.category.selectedIndex==0){
+     document.getElementById("errMsg").innerHTML="U must select a category";
+     return false;
+    }
+    else{
+      frm.submit();
+      return true;
+    }
+      
+   }
+
+ </script>
+
+<form name="frm" action="controller" method="post">
+   <span style="color:red" id="errMsg"></span>
+  <table border='1' style="border-color:red;background-color:cyan">
+   <tr>
+    <td>Select Book Category:: </td>
+    <td><select name="category" >
+          <option value=''>Select-a Value</option>
+          <option value='java'>JAVA</option>
+          <option value='.net'>.NET</option>
+          <option value='php'>PHP</option>
+        </select>
+   </tr>
+   <tr>
+     <td><input type="button" value="Exceloutput" onClick="isExcel()"></td>
+     <td><input type="button" value="Htmloutput" onClick="isHtml()"></td>
+   </tr>
+   <tr>
+     <td colspan="2"><input type="hidden" name="source"/></td>
+    </tr>
+  </table>
+
+</form>
+

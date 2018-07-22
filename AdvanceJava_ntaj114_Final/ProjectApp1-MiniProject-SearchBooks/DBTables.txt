@@ -1,0 +1,9 @@
+SQL> select * from book_details;
+
+    BOOKID BOOKNAME             AUTHOR               STATUS     CATEGORY
+---------- -------------------- -------------------- ---------- ----------
+      110   Easy .net            lazy                 no         .net
+      112   21 days .net         s                    no         .net
+      121   use php              Mr.p                 yes        php
+      101   CRJ                  HS                   yes        java
+      102   SIJ                  BE                   yes        java

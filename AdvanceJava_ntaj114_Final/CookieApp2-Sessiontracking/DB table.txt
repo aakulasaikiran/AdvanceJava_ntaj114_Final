@@ -1,0 +1,7 @@
+SQL> desc tax_tab;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ NAME                                               VARCHAR2(20)
+ FNAME                                              VARCHAR2(20)
+ INCOME                                             NUMBER(8)
+ TAX                                                NUMBER(8)

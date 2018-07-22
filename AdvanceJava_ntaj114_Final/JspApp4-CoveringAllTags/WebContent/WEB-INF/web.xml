@@ -1,0 +1,14 @@
+<web-app>
+  <servlet>
+   <servlet-name>A</servlet-name>
+   <jsp-file>/test.jsp</jsp-file>
+   <init-param>
+    <param-name>dbuser</param-name>
+    <param-value>system</param-value>
+   </init-param>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>A</servlet-name>
+     <url-pattern>/test1</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,47 @@
+<web-app>
+	<context-param>
+		<param-name>driver</param-name>
+		<param-value>com.mysql.jdbc.Driver</param-value>
+	</context-param>
+	<context-param>
+		<param-name>url</param-name>
+		<param-value>jdbc:mysql://mysql142340-nitdbenv.j.layershift.co.uk:3306/db1</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbuser</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbpwd</param-name>
+		<param-value>NFMmax14499</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>db</servlet-name>
+		<servlet-class>com.nt.servlet.DBServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>db</servlet-name>
+		<url-pattern>/dburl</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>test hello</servlet-name>
+		<servlet-class>com.nt.servlet.TestServlet</servlet-class>
+		<init-param>
+			<param-name>p1</param-name>
+			<param-value>val1</param-value>
+		</init-param>
+		<init-param>
+			<param-name>p1</param-name>
+			<param-value>val2</param-value>
+		</init-param>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>test hello</servlet-name>
+		<url-pattern>/testurl</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>input.html</welcome-file>
+	</welcome-file-list>
+</web-app>

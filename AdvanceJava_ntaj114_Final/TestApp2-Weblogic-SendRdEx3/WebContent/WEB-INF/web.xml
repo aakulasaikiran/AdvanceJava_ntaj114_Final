@@ -1,0 +1,12 @@
+
+<web-app>
+  <display-name>TestApp2-Weblogic-SendRdEx3</display-name>
+  <servlet>
+   <servlet-name>discount</servlet-name>
+   <servlet-class>com.nt.servlet.DiscountServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>discount</servlet-name>
+    <url-pattern>/discounturl</url-pattern>
+  </servlet-mapping>
+</web-app>
